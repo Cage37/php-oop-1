@@ -23,7 +23,7 @@ require __DIR__ . '/assets/templates/movies.php'
                 <?php foreach ($movies as $movie) : ?>
                 <div class="moviecard">
                     <span>Titolo: </span> <h3>
-                        <?= $movie -> title; ?>
+                        <?= $movie -> getTitle(); ?>
                     </h3>
                     <span>Durata: </span> <h4>
                         <?= $movie -> duration; ?>

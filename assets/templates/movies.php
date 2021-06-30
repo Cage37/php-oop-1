@@ -6,12 +6,13 @@ class Movie {
     public $genre;
 
 
-    // public function setTitle(string $title) {
-    //     return $this->title = $title;
-    // }
+    public function getTitle() {
+         return $this->title;
+    }
 
     public function __construct(string $title, float $duration, float $year, string $genre = "Science Fiction") {
-            $this->title = $title;
+            
+            $this -> title = $title;
             $this->duration = $duration;
             $this->year = $year;
             $this->genre = $genre;
